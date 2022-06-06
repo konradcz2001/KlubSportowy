@@ -9,11 +9,8 @@ namespace KlubSportowy.karnet
 
         public DateTime termin { get; }
 
-        private int dni;
-
-        public Karnet(int dni)
+        protected Karnet(int dni)
         {
-            this.dni = dni;
             termin = DateTime.Now.AddDays(dni);
         }
 

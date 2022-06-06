@@ -15,9 +15,9 @@ namespace KlubSportowy.produkt
 
         public int stanMagazynu { get; set; }
 
-        protected Produkt(double cenaSprzedarzy, double cenaProdukcji)
+        protected Produkt(double cenaSprzedazy, double cenaProdukcji)
         {
-            this.cenaSprzedazy = cenaSprzedarzy;
+            this.cenaSprzedazy = cenaSprzedazy;
             this.cenaProdukcji = cenaProdukcji;
             stanMagazynu = 0;
         }
@@ -83,7 +83,7 @@ namespace KlubSportowy.produkt
         {
             Console.Clear();
             Console.Write(  " Stan konta: " + Math.Round(stanKonta, 2) + "zł" +
-                            "\n Cena produkcji: " + Math.Round(cenaProdukcji, 2) +
+                            "\n Cena produkcji: " + Math.Round(cenaProdukcji, 2) + "zł" +
                             "\n Ile sztuk zamówić: ");
 
             int ilosc = 0;

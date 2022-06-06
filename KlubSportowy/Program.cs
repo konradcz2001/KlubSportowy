@@ -3,8 +3,6 @@ using KlubSportowy.karnet;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-//public private get set override
-//biblioteka wykres
 
 namespace KlubSportowy
 {
@@ -279,7 +277,7 @@ namespace KlubSportowy
             Produkt.kwotaZainwestowana = 0;
             Karnet.kwotaSprzedazy = 0;
             Ulgowy.cenaZaDzien = 19.99;
-            Ulgowy.cenaZa30Dni = 39.00;
+            Ulgowy.cenaZa30Dni = 39.99;
             Ulgowy.cenaZaRok = 399.99;
             Normalny.cenaZaDzien = 24.99;
             Normalny.cenaZa30Dni = 49.99;
