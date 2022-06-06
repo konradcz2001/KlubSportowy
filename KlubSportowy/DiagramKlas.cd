@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KlubSportowy.karnet.Karnet" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAQAABAAAAAAAIAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>karnet\Karnet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlubSportowy.karnet.Normalny" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>karnet\Normalny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlubSportowy.karnet.Ulgowy" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>karnet\Ulgowy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlubSportowy.produkt.Bialko" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAEAAAAAAAAAAAAAAAAAAAgAAgAAAAQAAAAA=</HashCode>
+      <FileName>produkt\Bialko.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KlubSportowy.produkt.GumaOporowa" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAgAAAgAAAAEAAAAAAIAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>produkt\GumaOporowa.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KlubSportowy.produkt.Kreatyna" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAACAAAAABA=</HashCode>
+      <FileName>produkt\Kreatyna.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KlubSportowy.produkt.Produkt" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAARAAAAAAAIAoBAAAAAAAAAAAAwg=</HashCode>
+      <FileName>produkt\Produkt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlubSportowy.Program" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAhBCACAAEAAERBAAAAAAEAADQAgAAAmBQUAAIA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlubSportowy.Uzytkownik" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAACEAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Uzytkownik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="KlubSportowy.produkt.IProdukt" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>produkt\IProdukt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
