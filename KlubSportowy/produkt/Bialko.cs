@@ -19,10 +19,7 @@ namespace KlubSportowy.produkt
 
         public static Bialko dodajBialko()
         {
-            Console.Write(" Podaj cenę produkcji: ");
-            double cenaProdukcji = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
-            Console.Write(" Podaj cenę sprzedaży: ");
-            double cenaSprzedazy = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
+            var ceny = Produkt.dodajProdukt();
             Console.Write(" Podaj smak: ");
             string smak = Console.ReadLine();
             Console.Write(" Podaj zawartość białka (%): ");
@@ -30,7 +27,7 @@ namespace KlubSportowy.produkt
             Console.Write(" Podaj wagę (g): ");
             int waga = Produkt.sprawdzPoprawnoscWyboru(0, int.MaxValue);
 
-            return new Bialko(cenaSprzedazy, cenaProdukcji, smak, zawartoscBialka, waga);
+            return new Bialko(ceny.Item1, ceny.Item2, smak, zawartoscBialka, waga);
         }
 
 

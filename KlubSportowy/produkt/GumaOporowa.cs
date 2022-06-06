@@ -24,10 +24,7 @@ namespace KlubSportowy.produkt
 
         public static GumaOporowa dodajGumeOporowa()
         {
-            Console.Write(" Podaj cenę produkcji: ");
-            double cenaProdukcji = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
-            Console.Write(" Podaj cenę sprzedaży: ");
-            double cenaSprzedazy = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
+            var ceny = Produkt.dodajProdukt();
             Console.Write(" Podaj długość (mm): ");
             int dlugosc = Produkt.sprawdzPoprawnoscWyboru(0, int.MaxValue);
             Console.Write(" Podaj grubość (mm): ");
@@ -38,7 +35,7 @@ namespace KlubSportowy.produkt
             int opor = Produkt.sprawdzPoprawnoscWyboru(0, int.MaxValue);
 
 
-            return new GumaOporowa(cenaSprzedazy, cenaProdukcji, dlugosc, grubosc, szerikosc, opor);
+            return new GumaOporowa(ceny.Item1, ceny.Item2, dlugosc, grubosc, szerikosc, opor);
         }
 
         public void wyswietlDaneProduktu()

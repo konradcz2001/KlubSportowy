@@ -22,6 +22,15 @@ namespace KlubSportowy.produkt
             stanMagazynu = 0;
         }
 
+        protected static Tuple<double, double> dodajProdukt()
+        {
+            Console.Write(" Podaj cenę produkcji: ");
+            double cenaProdukcji = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
+            Console.Write(" Podaj cenę sprzedaży: ");
+            double cenaSprzedazy = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
+            return Tuple.Create(cenaSprzedazy, cenaProdukcji);
+        }
+
         public void sprzedajProdukt(ref double stanKonta)
         {
             Console.Clear();

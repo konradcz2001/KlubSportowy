@@ -16,16 +16,13 @@ namespace KlubSportowy.produkt
 
         public static Kreatyna dodajKreatyne()
         {
-            Console.Write(" Podaj cenę produkcji: ");
-            double cenaProdukcji = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
-            Console.Write(" Podaj cenę sprzedaży: ");
-            double cenaSprzedazy = Produkt.sprawdzPoprawnoscWyboru(0, double.MaxValue);
+            var ceny = Produkt.dodajProdukt();
             Console.Write(" Podaj rodzaj: ");
             string rodzaj = Console.ReadLine();
             Console.Write(" Podaj wagę (g): ");
             int waga = Produkt.sprawdzPoprawnoscWyboru(0, int.MaxValue);
 
-            return new Kreatyna(cenaSprzedazy, cenaProdukcji, rodzaj, waga);
+            return new Kreatyna(ceny.Item1, ceny.Item2, rodzaj, waga);
         }
 
         public void wyswietlDaneProduktu()
