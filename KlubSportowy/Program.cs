@@ -143,11 +143,11 @@ namespace KlubSportowy
             gumyOporowe.ForEach(g => wartoscProduktow += (g.stanMagazynu * g.cenaSprzedazy));
 
             Console.WriteLine(" FINANSE" +
-                                "\n Kwota ze sprzedaży karnetów: " + Math.Round(Karnet.kwotaSprzedazy, 2) +
-                                "\n Kwota ze sprzedaży produktów: " + Math.Round(Produkt.kwotaSprzedazy, 2) +
-                                "\n Kwota zainwestowana w produkty: " + Math.Round(Produkt.kwotaZainwestowana, 2) +
-                                "\n Wartość produktów na magazynie: " + Math.Round(wartoscProduktow, 2) +
-                                "\n Stan konta: " + Math.Round(stanKonta, 2));
+                                "\n Kwota ze sprzedaży karnetów: " + Math.Round(Karnet.kwotaSprzedazy, 2) + "zł" +
+                                "\n Kwota ze sprzedaży produktów: " + Math.Round(Produkt.kwotaSprzedazy, 2) + "zł" +
+                                "\n Kwota zainwestowana w produkty: " + Math.Round(Produkt.kwotaZainwestowana, 2) + "zł" +
+                                "\n Wartość produktów na magazynie: " + Math.Round(wartoscProduktow, 2) + "zł" +
+                                "\n Stan konta: " + Math.Round(stanKonta, 2) + "zł");
 
             pobierzDowolnyKlawisz();
         }

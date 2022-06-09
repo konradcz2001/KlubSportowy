@@ -34,9 +34,22 @@ namespace KlubSportowy.produkt
         public void sprzedajProdukt(ref double stanKonta)
         {
             Console.Clear();
-            if (stanMagazynu < 1)
+            Console.Write(" Ile sztuk zamówić: ");
+
+            int ilosc = 0;
+            bool kontynuuj = true;
+
+            while (kontynuuj)
             {
-                Console.Write(  " Brak produktu w magazynie! Zamówić?\n" +
+                if (!int.TryParse(Console.ReadLine(), out ilosc) || ilosc < 0)
+                    Console.Write(" Spróbuj ponownie: ");
+                else
+                    kontynuuj = false;
+            }
+
+            if (stanMagazynu < ilosc)
+            {
+                Console.Write(  " Brak danej ilości w magazynie! Zamówić?\n" +
                                 " 1. Tak\n" +
                                 " 2. Nie\n\n" +
                                 " Wybierz odpowiedni numer: ");
@@ -46,11 +59,11 @@ namespace KlubSportowy.produkt
             }
             else
             {
-                Console.WriteLine(" Pomyślnie sprzedano");
-                stanMagazynu--;
-                kwotaSprzedazy += cenaSprzedazy;
+                Console.WriteLine(" Pomyślnie sprzedano sztuk: " + ilosc);
+                stanMagazynu -= ilosc;
+                kwotaSprzedazy += cenaSprzedazy * ilosc;
 
-                stanKonta += cenaSprzedazy;
+                stanKonta += cenaSprzedazy * ilosc;
                 Thread.Sleep(1500);
             }
         }
